@@ -1,0 +1,22 @@
+[package]
+name = "mcpg-standard-webhooks"
+version = "0.1.0-beta.1"
+edition = "2024"
+license = "Apache-2.0"
+description = "Standard Webhooks (v1, HMAC-SHA256) signing and verification: whsec_ secrets, webhook-id / webhook-timestamp / webhook-signature headers, several signatures during rotation, timestamp tolerance and constant-time comparison."
+
+[dependencies]
+base64 = "0.23"
+hmac = "0.13"
+http = "1"
+sha2 = "0.11"
+subtle = "2"
+zeroize = "1"
+
+[dev-dependencies]
+# An HMAC implementation independent of the one under test, for the
+# Svix-compatible reference verifier in the vector tests.
+hmac-sha256 = "1.1"
+proptest = "1"
+# The official Rust library, as an interoperability oracle for the tests.
+standardwebhooks = "=1.0.1"
