@@ -1,6 +1,6 @@
 [package]
 name = "mcpg-standard-webhooks"
-version = "0.1.0-beta.2"
+version = "0.1.0-beta.3"
 edition = "2024"
 license = "Apache-2.0"
 description = "Standard Webhooks (v1, HMAC-SHA256) signing and verification: whsec_ secrets, webhook-id / webhook-timestamp / webhook-signature headers, several signatures during rotation, timestamp tolerance and constant-time comparison."
